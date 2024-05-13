@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <title>Lab 3. Palamarchuk</title>
+</head>
+<body>
+    
+    <p><b><i>Завдання 1. У автоматично згенерованому масиві цілих чисел, знайти число, яке зустрічається найчастіше. Якщо таких чисел декілька, то вивести їх всі та вказати їх кількість:</i></b></p>
+   
+    <label for="rows">Кількість рядків:</label>
+    <input type="number" id="rows" min="1"><br>
+    <label for="cols">Кількість стовпчиків:</label>
+    <input type="number" id="cols" min="1"><br>
+    <button onclick="generateArray()">Згенерувати масив</button>
+    <button onclick="findMostCommonNumber()">Знайти найчастіше число</button>
+    <div id="arrayOutput"></div>
+    <div id="result_1"></div>
+    
+    <p><b><i>Завдання 2. З клавіатури вводиться текстовий рядок. Скласти скрипт, який підраховує кількість слів у кожному реченні:</i></b></p>
+
+    <label for="textInput">Введіть текст:</label><br>
+    <textarea id="textInput" rows="5" cols="50"></textarea><br>
+    <button onclick="countWordsInSentences()">Підрахувати слова</button><br>
+    <div id="result_2"></div>
+    
+    <!-- Можливий текст для перевірки -->
+    <!-- Це перше речення, тут 6 слів. Це друге речення, тут 5! Третє речення, 4 слова? Четверте речення, маємо тут вже 7 слів... І ось ще одне речення, тут буде найбільше слів, цілих 11! -->
+
+    <p><b><i>Завдання 3. Обчисліть n-те число Фібоначчі:</i></b></p>
+
+    <p>Числа Фібоначчі - це послідовність чисел, де кожне число (крім перших двох) дорівнює сумі двох попередніх чисел у послідовності.<br>
+    Послідовність зазвичай починається з 0 і 1: 0, 1, 1, 2, 3, 5, 8, 13, 21 і так далі.</p>
+        
+
+    <label for="fibInput">Введіть значення n:</label>
+    <input type="number" id="fibInput">
+    <button onclick="calculateFibonacci()">Обчислити</button>
+    <div id="result_3"></div>
+
+</body>
+</html>
